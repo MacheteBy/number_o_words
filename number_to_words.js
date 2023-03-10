@@ -3,7 +3,6 @@ var rubles = require('rubles').rubles;
 // первый вариан
 
 var text = rubles(781); // <--- cюда вводи переменную
-// console.log(text.replace(' рублей 00 копеек', ''));
 console.log(text.replace(/\sр\у([\d\w\W]*)/, '').trim());
 
 // второй вариант через переменную
